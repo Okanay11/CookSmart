@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Image View -->
+            <ImageView
+                android:id="@+id/recipe_image_view"
+                android:layout_width="500dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_launcher_foreground" />
+
+            <!-- Button Layout -->
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recipe_image_view"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/upload_from_camera_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="openCamera"
+                    android:text="Kameradan Yükle" />
+
+                <Button
+                    android:id="@+id/upload_from_gallery_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="openGallery"
+                    android:text="Galeriden Yükle" />
+            </LinearLayout>
+
+            <!-- Recipe Name Edit Text -->
+            <EditText
+                android:id="@+id/recipe_name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonLayout"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Tarifin Adı"
+                android:inputType="text" />
+
+            <!-- Servings Edit Text -->
+            <EditText
+                android:id="@+id/servings_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recipe_name_edit_text"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Kaç Kişilik?"
+                android:inputType="number" />
+
+            <!-- Cooking Time Edit Text -->
+            <EditText
+                android:id="@+id/cooking_time_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/servings_edit_text"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Pişirme Süresi (Dakika)"
+                android:inputType="number" />
+
+            <!-- Preparation Time Edit Text -->
+            <EditText
+                android:id="@+id/preparation_time_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cooking_time_edit_text"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Hazırlık Süresi (Dakika)"
+                android:inputType="number" />
+
+            <!-- Category Spinner -->
+            <Spinner
+                android:id="@+id/category_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/preparation_time_edit_text"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Ingredients Layout -->
+            <LinearLayout
+                android:id="@+id/ingredients_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/category_spinner"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical" />
+
+            <!-- Add Ingredient Button -->
+            <Button
+                android:id="@+id/add_ingredient_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ingredients_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="Malzeme Ekle" />
+
+            <!-- Description Edit Text -->
+            <EditText
+                android:id="@+id/description_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_ingredient_button"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:padding="8dp"
+                android:gravity="top|start"
+                android:hint="Tarif Açıklaması"
+                android:inputType="textMultiLine|textCapSentences|textAutoCorrect"
+                android:minLines="3"
+                android:background="@drawable/edit_text_border" />
+
+            <!-- Save Recipe Button -->
+            <Button
+                android:id="@+id/save_recipe_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/description_edit_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="100dp"
+                android:text="Tarifi Kaydet" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

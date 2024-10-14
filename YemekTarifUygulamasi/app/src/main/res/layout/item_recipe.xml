@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recipeItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="horizontal">
+
+    <!-- Tarif Resmi -->
+    <ImageView
+        android:id="@+id/recipeImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_image" />
+
+    <!-- Detaylar için dikey düzen -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <!-- Tarif Adı -->
+        <TextView
+            android:id="@+id/recipeNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Tarif Adı" />
+
+        <!-- Pişirme Süresi -->
+        <TextView
+            android:id="@+id/cookingTimeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pişirme Süresi: 30 dk" />
+
+        <!-- Kaç Kişilik -->
+        <TextView
+            android:id="@+id/servingsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kaç Kişilik: 4" />
+
+    </LinearLayout>
+</LinearLayout>

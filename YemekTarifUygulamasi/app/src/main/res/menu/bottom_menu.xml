@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_home"
+        android:title="Ana Sayfa"
+        android:icon="@drawable/bttm_home"/>
+    <item
+        android:id="@+id/bottom_star"
+        android:title="Favoriler"
+        android:icon="@drawable/bttm_star"/>
+    <item
+        android:id="@+id/bottom_add"
+        android:title="Tarif Ekle"
+        android:icon="@drawable/bttm_add"/>
+    <item
+        android:id="@+id/bottom_profile"
+        android:title="Profil"
+        android:icon="@drawable/bttm_profile"/>
+    <item
+        android:id="@+id/bottom_ai"
+        android:title="Tarif iste!"
+        android:icon="@drawable/bttm_ai"/>
+</menu>
