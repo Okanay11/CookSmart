@@ -4,11 +4,11 @@
 4. Build and run the project.
 
 NOTE
-The app is developed in Turkish, and some text elements in the code are also in Turkish.
+-The app is developed in Turkish, and some text elements in the code are also in Turkish.
 
 DEPENDENCIES
 
-Kotlin
-Firebase (Firestore, Authentication)
-ChatGPT API
-Android Jetpack Components (e.g., ViewModel, LiveData, Navigation)
+-Kotlin
+-Firebase (Firestore, Authentication)
+-ChatGPT API
+-Android Jetpack Components (e.g., ViewModel, LiveData, Navigation)
